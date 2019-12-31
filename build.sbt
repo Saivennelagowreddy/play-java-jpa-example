@@ -7,7 +7,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 scalaVersion := "2.12.8"
 
 crossScalaVersions := Seq("2.11.12", "2.12.7")
-
+libraryDependencies += javaJdbc
 libraryDependencies += guice
 libraryDependencies += javaJpa
 libraryDependencies += "com.h2database" % "h2" % "1.4.197"
